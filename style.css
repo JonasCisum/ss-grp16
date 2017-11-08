@@ -3,18 +3,37 @@ body {
     padding: 0;
 }
 
-#scene {
-    background-image: url();
-    background-size: cover;
-    background-repeat: no-repeat;
+#knapper {
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    margin: 0 auto;
+}
 
-    position: relative;
+#scene {
     /*    width: 750px;*/
     width: 56.22vh;
     /*    height: 1334px;*/
     height: 100vh;
-    margin: auto;
+    position: relative;
+    margin: 0 auto;
     overflow: hidden;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+#bg {
+    width: 200%;
+    height: 200%;
+
+    background-image: url(img/bed.svg);
+    background-size: 100%;
+
+    position: absolute;
+    z-index: 0;
+
 }
 
 #messenger_container {
