@@ -14,7 +14,7 @@ body {
     /*    width: 750px;*/
     width: 56.22vh;
     /*    height: 1334px;*/
-    height: 100vh;
+    height: 85vh;
     position: relative;
     margin: 0 auto;
     overflow: hidden;
@@ -25,11 +25,13 @@ body {
 }
 
 #bg {
-    width: 200%;
-    height: 200%;
+    width: 100%;
+    height: 100%;
 
-    background-image: url(img/bed.svg);
+    background-image: url(img/test_dreng02.png);
     background-size: 100%;
+    background-repeat: no-repeat;
+
 
     position: absolute;
     z-index: 0;
