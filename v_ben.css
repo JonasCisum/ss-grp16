@@ -1,0 +1,466 @@
+body {
+    margin: 0;
+}
+
+#scene {
+    width: 56.22vw;
+    height: 85vw;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.sommer_scene {
+    background-image: url(img/start_bg.svg);
+    background-size: cover;
+}
+
+#samtale_container {
+    position: absolute;
+}
+
+.samtale_sprite {
+    background-image: url(img/sprite/messenger_sprite.svg);
+    width: 56.22vw;
+    height: 85vw;
+    background-size: 300%;
+    animation-name: samtale;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(3);
+    animation-direction: reverse;
+}
+
+@keyframes samtale {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 300% 0%;
+
+    }
+}
+
+
+.samtale_start_pos {
+    left: 120%;
+}
+
+.samtale_bg {
+    background-image: url(img/sprite/messenger_sprite.svg);
+    width: 56.22vw;
+    height: 85vw;
+    background-size: 300%;
+    animation-name: samtale;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1);
+    opacity: 0.3;
+    position: absolute;
+}
+
+.dreng_sprite {
+    background-image: url(img/sprite/seng_bg_sprite.svg);
+    width: 56.22vw;
+    height: 85vw;
+    margin: 0 auto;
+    overflow: hidden;
+    background-size: 300%;
+}
+
+
+
+.dreng_kig_op {
+    animation-name: kig_op;
+    background-image: url(img/sprite/seng_bg_sprite.svg);
+    width: 56.22vw;
+    height: 85vw;
+    margin: 0 auto;
+    overflow: hidden;
+    background-size: 300%;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(1);
+
+}
+
+@keyframes kig_op {
+    0% {
+        background-position: 200% 0%
+    }
+    100% {
+        background-position: 200% 0%;
+
+    }
+}
+
+.dreng_kig_tlf {
+    animation-name: kig_tlf;
+    background-image: url(img/sprite/seng_bg_sprite.svg);
+    width: 56.22vw;
+    height: 85vw;
+    margin: 0 auto;
+    overflow: hidden;
+    background-size: 300%;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(1);
+
+}
+
+@keyframes kig_tlf {
+    0% {
+        background-position: 400% 0%;
+    }
+    100% {
+        background-position: 400% 0%;
+
+    }
+}
+
+#forgrund {
+    background-image: url("img/snow_forgrund.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 100%;
+    width: 85vw;
+    height: 49vw;
+    top: 1vw;
+    left: 0vw;
+}
+
+#logo {
+
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.logo {
+    background-image: url(img/ps_logo.svg);
+    height: 13vw;
+    width: 17vw;
+    top: 70%;
+    left: 35%;
+}
+
+#enter {
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.enter {
+    background-image: url(img/startknap.svg);
+    height: 11vw;
+    width: 37vw;
+    top: 42%;
+    left: 17%;
+    background-color: none;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+#besked_container {
+    position: absolute;
+    top: 42%;
+}
+
+
+#besked_sprite {
+    background-image: url(img/silas_pop_up.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 56vw;
+    height: 49vw;
+
+}
+
+.besked_start_pos {
+    left: 120%;
+}
+
+.besked_one {}
+
+
+
+#mobil_sprite {
+    background-image: url(img/sprite/mobil_sprite-01.png);
+    width: 7vw;
+    height: 10.2vw;
+    background-size: 100%;
+    position: absolute;
+
+
+}
+
+#mobil_container {
+    position: absolute;
+
+}
+
+.mobil_start_pos {
+    left: 120%;
+}
+
+.mobil_start {
+    top: 46%;
+    left: 26%;
+}
+
+.mobil_vibrer {
+    animation-name: vibrer;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1);
+    animation-direction: reverse;
+    top: 46%;
+    left: 26%;
+
+}
+
+@keyframes vibrer {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 100% 100%;
+
+    }
+}
+
+#chok_container {
+
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.chok_start_pos {
+    left: 120%;
+}
+
+.chok_sprite {
+    background-image: url(img/sprite/surprise-01-01.png);
+    width: 56.22vw;
+    height: 86vw;
+}
+
+.valg {
+    background-image: url(img/bg_valg.svg);
+    width: 56.22vw;
+    height: 86vw;
+}
+
+#del {
+
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.del {
+    background-image: url(img/dele_billedet_knap.svg);
+    height: 15vw;
+    width: 48vw;
+    top: 16%;
+    left: 7%;
+    background-color: none;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.button_hidden {
+    background-color: none;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    background: none;
+}
+
+#kontakt {
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.kontakt {
+    background-image: url(img/privat_snak_knap.svg);
+    height: 22vw;
+    width: 48vw;
+    top: 31%;
+    left: 7%;
+    background-color: none;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.samtale_del {
+    background-image: url(img/sprite/messengercracked.svg);
+    width: 56.22vw;
+    height: 86vw;
+    background-size: 200%;
+}
+
+.samtale_cracked {
+    background-image: url(img/sprite/messengercracked.svg);
+    width: 56.22vw;
+    height: 86vw;
+    background-size: 200%;
+    animation-name: cracked;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1);
+}
+
+@keyframes cracked {
+    0% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+
+    }
+}
+
+
+
+.hov {
+    background-image: url(img/bg_da%CC%8Arligtvalg_slut.svg);
+    width: 56.22vw;
+    height: 86vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#prov_igen {
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.prov_igen {
+    background-image: url(img/pr%C3%B8v_igen_knap.svg);
+    height: 22vw;
+    width: 48vw;
+    top: 38%;
+    left: 7%;
+    background-color: none;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+#praemie {
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.praemie {
+    background-image: url(img/pr%C3%A6mie_knap.svg);
+    height: 13vw;
+    width: 35vw;
+    top: 79%;
+    left: 19%;
+    background-color: none;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+#ga_til_ps {
+    background-repeat: no-repeat;
+    position: absolute;
+
+}
+
+.ga_til_ps {
+    height: 13vw;
+    width: 43vw;
+    top: 38%;
+    left: 12%;
+    background-image: url(img/privatsnak_knap.svg);
+}
+
+
+#ps_samtale_container {
+    position: absolute;
+}
+
+.ps_samtale_sprite1 {
+    background-image: url(img/sprite/spritesheet_privatsnak.svg);
+    width: 56.22vw;
+    height: 85vw;
+    background-size: 300%;
+    animation-name: ps_samtale1;
+}
+
+
+
+.ps_samtale_sprite2 {
+    background-image: url(img/sprite/spritesheet_privatsnak.svg);
+    width: 56.22vw;
+    height: 85vw;
+    background-size: 300%;
+    animation-name: ps_samtale2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1);
+}
+
+@keyframes ps_samtale2 {
+    0% {
+        background-position: 200% 0%;
+    }
+    100% {
+        background-position: 200% 0%;
+
+    }
+}
+
+
+.ps_samtale_sprite3 {
+    background-image: url(img/sprite/spritesheet_privatsnak.svg);
+    width: 56.22vw;
+    height: 85vw;
+    background-size: 300%;
+    animation-name: ps_samtale3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1);
+}
+
+@keyframes ps_samtale3 {
+    0% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+
+    }
+}
+
+.praemie_bg {
+    background-image: url(img/bg_pr%C3%A6mie.svg);
+    width: 56.22vw;
+    height: 85vw;
+    background-size: 100%;
+}
